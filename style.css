@@ -449,3 +449,48 @@ footer {
   font-size: 16px;
   line-height: 1.5;
 }
+/* ///////////////////////////////////////gallerie ///////////////////////////////// */
+.gallery {
+  padding: 40px;
+  text-align: center;
+  background: #2c3e50; /* Couleur sombre pour ambiance Jurassic */
+  padding-bottom: 150px;
+}
+
+.gallery h1 {
+  font-size: 36px;
+  color: #029e43;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* Crée des colonnes flexibles */
+  gap: 20px; /* Espace entre les éléments */
+  padding: 0 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+  cursor: pointer;
+}
+
+/* Certaines images sont plus grandes */
+.large-item {
+  grid-column: span 2; /* Occupe deux colonnes */
+  grid-row: span 2; /* Occupe deux lignes */
+}
+
+.large-item img {
+  object-fit: cover; /* Garde les proportions de l'image */
+}
