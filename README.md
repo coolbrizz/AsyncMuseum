@@ -1,2 +1,1 @@
-https://sparkly-flan-3d35fe.netlify.app/contact
-
+(https://sparkly-flan-3d35fe.netlify.app/)
