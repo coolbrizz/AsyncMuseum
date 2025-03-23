@@ -1,0 +1,375 @@
+@font-face {
+  font-family: "bolt";
+  src: url("/RockSalt-Regular.ttf") format("truetype");
+}
+h1 {
+  font-family: "bolt", sans-serif;
+}
+h2,
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 25px;
+}
+body {
+  background: url("jungle-texture.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Rock Salt", cursive;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hauteur minimum pour occuper tout l'écran */
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: url("back-dyno.png") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 500px;
+  border-bottom: 3px solid #8b5a2b;
+}
+.navbar .logo {
+  position: fixed;
+  min-height: 150px;
+}
+
+.nav {
+  border-bottom: 3px solid #8b5a2b;
+  display: flex;
+  justify-content: center;
+}
+.navbar nav {
+  display: flex;
+  flex-direction: row;
+}
+.logo img {
+  width: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5e5542;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #029e43;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 30px;
+  height: 3px;
+  background: #029e43;
+  margin: 5px;
+}
+.hero {
+  flex: 1; /* Permet au contenu de s'étirer pour pousser le footer en bas */
+  color: #5e5542;
+  padding-top: 10px;
+  padding-left: 170px;
+}
+
+.footer {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(34, 49, 34, 0.95);
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+.hero {
+  background-image: "/back-dyno.png";
+}
+/* //////////////////////////////////////////card ///////////////////////////////////// */
+.attractions {
+  text-align: center;
+  padding: 30px 20px;
+  background: #2c3e50; /* Couleur sombre pour ambiance Jurassic */
+  color: #029e43;
+  border-bottom: 3px solid #8b5a2b;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: rgba(51, 34, 17, 0.9); /* Brun foncé transparent */
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 50px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #029e43;
+}
+
+.card p {
+  font-size: 14px;
+  color: #03ff6c;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+}
+
+/* Presentation */
+.director {
+  background: #2c3e50; /* Couleur sombre pour ambiance Jurassic */
+  text-align: center;
+  padding: 10px 20px;
+  padding-bottom: 80px;
+}
+
+.director h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #029e43;
+}
+
+.director-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 34, 17, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.director-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #029e43;
+}
+
+.director-info {
+  text-align: left;
+}
+
+.director-info h3 {
+  margin: 0;
+  color: #029e43;
+}
+
+.director-info p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #03ff6c;
+}
+.bloc-conservator {
+  padding-top: 50px;
+  margin-left: 300px;
+}
+.bloc-director {
+  margin-right: 200px;
+}
+.bloc-paleontologue {
+  margin-right: 200px;
+  padding-top: 50px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #029e43;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #06e462;
+}
+@media screen and (max-width: 880px) {
+  .director-card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .navbar .logo {
+    position: relative;
+  }
+}
+/* //////////////////////////////////// RACES //////////////////////////////////// */
+/* Conteneur de la section */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+section h1 {
+  color: #029e43;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #8b5a2b;
+}
+.race {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* Liste du dessus et du dessous */
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  justify-content: space-around;
+  color: #5e5542;
+}
+li {
+  font-size: 20px;
+}
+
+.list-above,
+.list-below {
+  margin: 10px 0;
+}
+
+/* Image centrée */
+.dinosaur-image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0; /* Espace entre l'image et les listes */
+  display: block;
+}
+/* ///////////////////////////////////////Footer /////////////////////////////////////// */
+/* Footer Style */
+footer {
+  color: #5e5542;
+  padding: 20px 20px;
+  text-align: center;
+  border-top: 3px solid #8b5a2b;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  max-width: 250px;
+  margin-right: 20px;
+}
+
+.footer-info p {
+  margin: 10px 0;
+}
+
+/* Style du footer et des réseaux sociaux */
+.footer-social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reseau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social a:hover {
+  color: #f1c40f;
+}
+.footer-credit {
+  border-top: 3px solid #8b5a2b;
+
+  text-align: center;
+}
+.footer-credit p {
+  padding-top: 50px;
+}
+.credit {
+  display: flex;
+  justify-content: center;
+}
