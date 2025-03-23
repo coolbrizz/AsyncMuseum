@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Musée de Paléontologie</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="/logo-pour-un-mus-e-sur-les-dinausaures-avec-le-tex.png"
+          alt="Dinosaur Park"
+        />
+      </div>
+
+      <!-- <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav> -->
+      <header class="hero">
+        <h1>Bienvenue au musée des dinosaures</h1>
+      </header>
+    </div>
+    <div class="nav">
+      <ul class="nav-links">
+        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="#">Galerie</a></li>
+        <li><a href="#">Événements</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Page de Contact -->
+    <section class="contact">
+      <div class="contact-header">
+        <h1>Contactez-nous</h1>
+        <p>
+          Si vous avez des questions, des demandes ou souhaitez en savoir plus,
+          n’hésitez pas à nous contacter. Nous sommes là pour vous aider !
+        </p>
+      </div>
+
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Sujet :</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Informations de contact</h3>
+        <p>
+          <strong>Adresse :</strong> Musée de Paléontologie, 123 Rue des
+          Fossiles, 75000 Paris, France
+        </p>
+        <p><strong>Horaires :</strong> Du lundi au vendredi, de 10h à 18h</p>
+        <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+        <p><strong>Email :</strong> contact@museum.com</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                src="/facebook.webp"
+                alt="Facebook"
+                class="social-icon"
+              />Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img
+                src="/instagram.webp"
+                alt="Instagram"
+                class="social-icon"
+              />Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"
+              ><img
+                src="/twitter.png"
+                alt="Twitter"
+                class="social-icon"
+              />Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank"
+              ><img
+                src="/youtube.png"
+                alt="YouTube"
+                class="social-icon"
+              />YouTube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
